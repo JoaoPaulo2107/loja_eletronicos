@@ -2,77 +2,196 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja de eletrônicos</title>
+    <title>Loja de Eletrônicos</title>
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
-    <header class="container">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary container-fluid">
-            <div class="container">
-              <a class="navbar-brand" href="#">Loja</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary container-fluid">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Loja</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Produtos</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link " href="#" >
-                      contatos
-                    </a>
-                </form>
-              </div>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>  
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre Nós</a>
+                    </li>
+                </ul>
+    
             </div>
-          </nav>
-    </header>
-    <main>
-        <div class="row">
-            <div class="card mt-5" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              <div class="card mt-5" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              <div class="card mt-5" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
         </div>
-     
+    </nav>
+
+    <div class="hero text-center">
+        <h1>Bem-vindo à TechShop</h1>
+    </div>
+
+    <header class="container mt-5 mb-4">
+        <h2>Loja de Eletrônicos</h2>
+    </header>
+
+    <main class="container mt-4">        
+        <section class="mb-5">
+            <h2>Produtos em Destaque</h2>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img src="img/4090.jpg" class="card-img-top" alt="Placa de vídeo 4090">
+                        <div class="card-body">
+                            <h5 class="card-title">Placa de vídeo 4090</h5>
+                            <p class="card-text">Placa de vídeo 4090 ROG Strix 24 GB</p>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProduto1">Veja mais detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img src="img/64 gb de ram(2x32).jpg" class="card-img-top" alt="Memória TridentZ 64GB">
+                        <div class="card-body">
+                            <h5 class="card-title">Memória TridentZ</h5>
+                            <p class="card-text">Memória TridentZ 64GB (2x32)</p>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProduto2">Veja mais detalhes...</a>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img src="img/SSD 2 tb Nvme.jpg" class="card-img-top" alt="SSD 2TB">
+                        <div class="card-body">
+                            <h5 class="card-title">SSD 2TB</h5>
+                            <p class="card-text">Memória SSD NVMe 2TB</p>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProduto3">Veja mais detalhes</a>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+
+        <div class="modal fade" id="modalProduto1" tabindex="-1" aria-labelledby="modalProduto1Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProduto1Label">
+                          <ul>
+                            <li>Nome do Produto: Placa de Vídeo 4090 ROG Strix</li>
+                            <li>Memória: 24 GB</li>
+                            <li>Modelo: ROG Strix 4090</li>
+                            <li>Tipo de Memória: GDDR6X</li>
+                            <li>Interface: PCI Express 4.0</li>
+                            <li>Resolução Máxima: 7680 x 4320 (8K)</li>
+                            <li>Conectividade: HDMI 2.1, DisplayPort 1.4a</li>
+                            <li>Dimensões: 30 x 13 x 5 cm</li>
+                            <li>Peso: 2 kg</li>
+                            <li>Preço: R$ 14.399,00</li>
+                            <li>Descrição: Ideal para gamers e profissionais que buscam desempenho gráfico extremo.</li>
+                          </ul>
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalProduto2" tabindex="-1" aria-labelledby="modalProduto2Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProduto2Label">
+                          <ul>
+                            <li>Nome do Produto: Memória TridentZ 64GB</li>
+                            <li>Tipo: Memória RAM</li>
+                            <li>Capacidade: 64 GB (2x32 GB)</li>
+                            <li>Tipo de Memória: DDR4</li>
+                            <li>Frequência: 3200 MHz</li>
+                            <li>Latência: CL16</li>
+                            <li>Compatibilidade: Intel e AMD</li>
+                            <li>Dimensões: 13.5 x 3.0 x 2.0 cm</li>
+                            <li>Peso: 0.5 kg</li>
+                            <li>Preço: R$ 1.500,00</li>
+                            <li>Descrição: Perfeita para gamers e criadores de conteúdo.</li>
+                          </ul>
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalProduto3" tabindex="-1" aria-labelledby="modalProduto3Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProduto3Label">
+                          <ul>
+                            <li>Nome do Produto: SSD NVMe 2TB</li>
+                            <li>Tipo: Armazenamento</li>
+                            <li>Capacidade: 2 TB</li>
+                            <li>Interface: PCIe Gen 3.0 x4 NVMe</li>
+                            <li>Leitura Sequencial: Até 3500 MB/s</li>
+                            <li>Gravação Sequencial: Até 3000 MB/s</li>
+                            <li>Dimensões: 8 x 2.2 x 0.2 cm</li>
+                            <li>Peso: 0.1 kg</li>
+                            <li>Preço: R$ 800,00</li>
+                            <li>Descrição: Oferece velocidade excepcional em jogos e aplicações pesadas.</li>
+                          </ul>
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="mb-5">
+            <h2>Formulário de Contato</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="inputEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" required>
+                    <div id="emailHelp" class="form-text">Nunca compartilharemos seu e-mail com ninguém.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="inputPassword" class="form-label">Senha</label>
+                    <input type="password" class="form-control" id="inputPassword" required>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="checkAgree" required>
+                    <label class="form-check-label" for="checkAgree">Concordo com os termos</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </section>
     </main>
-    <footer></footer>
 
+    <footer class="container-fluid text-center mt-5">
+        <p>&copy; 2024 Loja de Eletrônicos | Todos os direitos reservados</p>
+    </footer>
 
-
-
-
-
-
-
-
-
-    <script src="js/bootstrap.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>
+
+
+
